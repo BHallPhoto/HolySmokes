@@ -1,0 +1,332 @@
+@font-face {
+  font-family: freakshow;
+  src: url('./assets/Carnevalee\ Freakshow.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+/* !! Do Not Delete this High Order Declaration */
+* {
+  box-sizing: border-box; /* Do Not Remove! */
+}
+/* !! Do Not Delete this Above!!! ************* */
+
+body {
+  background-color: #e9e2d9;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  background: url('./assets/homeBG.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+}
+@media screen and (max-width: 670px) {
+  header {
+    min-height: 400px;
+  }
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+strong {
+  font-weight: 600;
+}
+
+:root {
+  --navBG: #8E6244;
+  --linkHover: rgba(213, 173, 114, 0.5);
+  --linkActive: #d49f50;
+  --mainFont: #444C56;
+  --splitter: #AAA293;
+  --inputFont: #272d35;
+  --inputBorder: #af6716;
+  --inputLabel: #a86619;
+}
+
+.brand-logo {
+  font-family: freakshow;
+}
+nav .brand-logo {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 420px){
+  .brand-logo {
+    font-size: 30px !important;
+  }
+}
+
+.holyImg {
+  position: relative;
+  height: 50px;
+  top: 8px;
+  z-index: 1;
+}
+
+.menuImg {
+  position: relative;
+  height: 50px;
+  top: 8px;
+  left: 50px;
+}
+
+nav {
+  background-color: var(--navBG);
+}
+
+.sidenav {
+  background-color: var(--navBG);
+}
+.sidenav li a {
+  color: white;
+}
+
+.nav-content li:hover {
+  background-color: var(--linkHover);
+  z-index: -1;
+}
+
+.tabs .tab a {
+  font-size: 12px;
+  padding: 0 15px;
+  letter-spacing: 1px;
+}
+
+.tabs .tab::first-letter {
+  font-size: 1.125rem;
+}
+
+nav.nav-center ul {
+  text-align: center;
+  padding: 0;
+}
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+nav.nav-center ul li a {
+  display: inline-block;
+}
+@media only screen and (max-width: 1130px){
+  .hide-on-med-and-down {
+    display:none !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .holyImg {
+    height: 43px;
+    top: 8px;
+  }
+}
+@media only screen and (max-width: 1130px){
+  nav a.sidenav-trigger {
+    display: block
+  }
+}
+@media only screen and (max-width: 1130px) {
+  nav .brand-logo {
+    left:50%;
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%)
+  }
+}
+
+.homeBG {
+  background: url('./assets/cigar.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: table;
+  min-height: 400px;
+  margin: 20px auto;
+}
+
+.saying {
+  color: var(--mainFont);
+  display: table-cell;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+  font-variant: small-caps;
+  line-height: 1.75em;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: 1px 1px 1px white;
+}
+
+.mailSubscribe {
+  height: 100%;
+  background-color: var(--splitter);
+}
+
+.input-field {
+  position: relative;
+  top: 15px;
+}
+
+/* Input Field Colors */
+/* label color */
+.input-field label {
+  color: var(--mainFont) !important;
+}
+.input-field input {
+  /*inputer-bottom: 1px solid var(--inputBorder) !important; */
+  /* box-shadow: 0 1px 0 0 rgba(var(--inputLabel)) !important; */
+}
+/* label focus color */
+.input-field input:focus + label {
+  color: var(--inputLabel) !important;
+}
+/* label underline focus color */
+.input-field input:focus {
+  border-bottom: 1px solid var(--inputBorder) !important;
+  box-shadow: 0 1px 0 0 var(--inputLabel) !important;
+}
+/* valid color */
+.input-field input.valid {
+  border-bottom: 1px solid var(--mainFont) !important;
+  box-shadow: 0 1px 0 0 var(--mainFont) !important;
+}
+/* invalid color */
+.input-field input.invalid {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: var(--inputLabel) !important;
+}
+.input-field .prefix {
+  color: var(--mainFont) !important;
+}
+
+.subBtn {
+  position: relative;
+  margin: 0 auto;
+}
+.subBtn button {
+  background-color: var(--linkActive);
+}
+.subBtn button:hover {
+  background-color: var(--linkHover);
+}
+.subBtn button:focus {
+  background-color: var(--linkActive);
+}
+.subBtn button:active {
+  background-color: var(--linkActive);
+}
+
+.mailSubscribe {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.parallax-container {
+  height: 400px;
+}
+
+.parallax img {
+  width: 100%;
+}
+
+@media screen and (max-width: 634px) {
+  .parallax img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+#about {
+  padding: 30px 0;
+}
+
+.aboutSaying {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section#about {
+  font-size: calc(10px + .45vw);
+}
+@media screen and (max-width: 1287px) {
+  section#about {
+    font-size: calc(12px + .5vw);
+  }
+}
+
+section#glass {
+  padding-bottom: 14px;
+}
+.tabs .tab a:focus.active {
+  background-color: rgba(212, 159, 80, 0.2);
+}
+.tabs .indicator {
+  background-color: var(--linkActive);
+}
+li.indicator-item {
+  background-color: rgba(170, 162, 147, 0.75) !important;
+}
+.slider .indicators .indicator-item.active {
+  background-color: var(--mainFont) !important;
+}
+
+.splitterBG {
+  background-color: white;
+}
+
+/* Return to Top */
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(142, 98, 68);
+  background: rgba(163, 112, 78, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #573b29;
+  margin: 0;
+  position: relative;
+  left: 12px;
+  top: 12px;
+  font-size: 27px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: var(--linkHover);
+}
+#return-to-top:hover i {
+  color: rgb(221, 129, 68);
+  top: 5px;
+}
+/* Return to Top End */
