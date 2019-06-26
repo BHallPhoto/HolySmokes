@@ -9,7 +9,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>React App</title>
+    <title>HolySmokes</title>
   </head>
   <body>
     <noscript>
@@ -71,7 +71,7 @@
           <div class="row">
             <div class="input-field col s8 offset-s2 l4 offset-l4">
               <i class="material-icons prefix">email</i>
-              <input type='email' id="emailSubscription" class='validate'></input>
+              <input type='email' id="emailSubscription" class='validate' required></input>
               <label for="emailSubscription">Email</label>
               <div class='valign-wrapper'>
                 <span class='subBtn'>
@@ -168,7 +168,63 @@
     <!-- Parallax Three -->
     <div class='parallax-container'>
       <div class='parallax'>
-        <img src='./assets/parallax3.jpg' alt='stars' />
+        <img src="./assets/parallax3.jpg" alt="stars" />
+      </div>
+    </div>
+
+    <!-- Vape -->
+    <section class="container section scrollspy" id="vape">
+      <div class="row">
+        <div class="col s12 l6">
+          <ul class="tabs transparent">
+            <li class="tab col s3">
+              <a href="#mods" class="indigo-text text-darken-4">Mods</a>
+            </li>
+            <li class="tab col s3">
+              <a href="#pens" class="indigo-text text-darken-4">Pens</a>
+            </li>
+            <li class="tab col s3">
+              <a href="#juice" class="indigo-text text-darken-4">Juice</a>
+            </li>
+            <li class="tab col s3">
+              <a href="#vape-accessories" class="indigo-text text-darken-4">Accessories</a>
+            </li>
+          </ul>
+          <div class="col s12" id="mods">
+            <div class='carousel carousel-slider'>
+              <a href='#glass1' class='carousel-item'><img src='./assets/glassImg/glass1.jpg' alt='Glass Image 1'/></a>
+            </div>
+          </div>
+          <div class="col s12" id="pens">
+            <div class='carousel carousel-slider'>
+              <a href='#glass2' class='carousel-item'><img src='./assets/glassImg/glass2.jpg' alt='Glass Image 2'/></a>
+            </div>
+          </div>
+          <div class="col s12" id="juice">
+            <div class='carousel carousel-slider'>
+              <a href='#glass3' class='carousel-item'><img src='./assets/glassImg/glass3.jpg' alt='Glass Image 3'/></a>
+            </div>
+          </div>
+          <div class="col s12" id="vape-accessories">
+            <div class='carousel carousel-slider'>
+              <a href='#glass4' class='carousel-item'><img src='./assets/glassImg/glass4.jpg' alt='Glass Image 4'/></a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h2 class="indigo-text text-darken-4">Vape Products</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue,
+          suscipit elit nec, tincidunt orci.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue,
+          suscipit elit nec, tincidunt orci.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax Four -->
+    <div class='parallax-container'>
+      <div class='parallax'>
+        <img src="./assets/parallax4.jpg" alt="stars" />
       </div>
     </div>
 

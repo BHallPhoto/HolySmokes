@@ -236,21 +236,6 @@ nav.nav-center ul li a {
   padding-bottom: 10px;
 }
 
-.parallax-container {
-  height: 400px;
-}
-
-.parallax img {
-  width: 100%;
-}
-
-@media screen and (max-width: 634px) {
-  .parallax img {
-    height: 100%;
-    width: auto;
-  }
-}
-
 #about {
   padding: 30px 0;
 }
